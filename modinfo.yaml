@@ -1,0 +1,11 @@
+﻿entrypoint: 
+    dll: randomLobbyJoiner.dll
+    className: RandomLobbyJoiner.RandomLobbyJoiner
+attributes:
+    id: com.codemob.randomLobbyJoiner
+    name: Random Lobby Joiner
+    description: bopl go brr
+    version: "6.9.420"
+    authors: 
+        - Codemob
+        - Shad0w
