@@ -36,7 +36,7 @@ namespace RandomLobbyJoiner
                 }
             }
             return;
-            var validLobbies = await GetValidLobbies();
+            /*var validLobbies = await GetValidLobbies();
             if (validLobbies != null)
             {
                 Lobby selectedLobby = validLobbies[Random.Next(validLobbies.Length)];
@@ -58,7 +58,7 @@ namespace RandomLobbyJoiner
                 SteamManager.instance.currentLobby.SetPublic();
 
 
-                GameLobby.nrOfAbilities = Settings.Get().NumberOfAbilities;
+                GameLobby.nrOfAbilities = Settings.Get().NumberOfAbilities;*/
             }
         }
 
