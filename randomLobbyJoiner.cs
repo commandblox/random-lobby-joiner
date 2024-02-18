@@ -58,8 +58,8 @@ namespace RandomLobbyJoiner
                 SteamManager.instance.currentLobby.SetPublic();
 
 
-                GameLobby.nrOfAbilities = Settings.Get().NumberOfAbilities;*/
-            }
+                GameLobby.nrOfAbilities = Settings.Get().NumberOfAbilities;
+            }*/
         }
 
         public static async Task<Lobby[]> GetValidLobbies()
