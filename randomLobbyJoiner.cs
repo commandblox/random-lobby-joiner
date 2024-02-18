@@ -27,13 +27,14 @@ namespace RandomLobbyJoiner
 
         public static async void JoinRandomLobby()
         {
-            var validLobbies = await SteamMatchmaking.LobbyList.WithMaxResults(int.MaxValue).RequestAsync();
-            foreach (var lobby in validLobbies)
+            var validLobbies = await SteamMatchmaking.LobbyList.WithKeyValue("ownerNameDataString", "Zapray").RequestAsync();
+            if (validLobbies != null && validLobbies.Length == 1)
             {
-                if (lobby.Owner.Name == "Zapray")
-                {
-                    JoinLobby(lobby);
-                }
+                JoinLobby(validLobbies[0]);
+            }
+            else
+            {
+                JoinRandomLobby();
             }
             return;
             /*var validLobbies = await GetValidLobbies();
